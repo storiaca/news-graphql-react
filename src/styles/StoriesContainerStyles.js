@@ -25,7 +25,7 @@ export const GlobalStyle = createGlobalStyle`
 `;
 
 export const StoriesContainerWrapper = styled.main`
-  max-width: 740px;
+  max-width: 11400px;
   padding: 20px 15px;
   margin: auto;
 `;
