@@ -9,11 +9,12 @@ const StoriesContainer = () => {
     getStoryIds().then(data => setStoryIds(data));
   }, []);
   return (
-    <div>
+    <>
+      <h1>Hacker News Stories</h1>
       {storyIds.map(storyId => (
         <Story storyId={storyId} key={storyId} />
       ))}
-    </div>
+    </>
   );
 };
 
