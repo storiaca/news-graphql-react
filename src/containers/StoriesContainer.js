@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useMemo } from "react";
-import Story from "../components/Story";
+import { Story } from "../components/Story";
 import { getStoryIds } from "../services/hnApi";
 import {
   GlobalStyle,

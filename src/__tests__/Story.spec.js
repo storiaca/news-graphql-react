@@ -1,6 +1,6 @@
 import React from "react";
 import { render, cleanup, waitForElement } from "@testing-library/react";
-import Story from "../components/Story";
+import { Story } from "../components/Story";
 import { singularStory } from "../fixtures";
 import { getStory } from "../services/hnApi";
 
