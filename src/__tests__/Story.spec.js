@@ -1,6 +1,6 @@
 import React from "react";
 import { render, cleanup, waitForElement } from "@testing-library/react";
-import { Story } from "../components/Story";
+import Story from "../components/Story";
 import { singularStory } from "../fixtures";
 import { getStory } from "../services/hnApi";
 
@@ -21,6 +21,6 @@ test("renders the story component with content", async () => {
   await waitForElement(() => [
     expect(getByTestId("story")).toBeTruthy(),
     expect(getByText("Tarnished: Google Responds")).toBeTruthy(),
-    expect(getByTestId("story-by").textContent).toEqual("By: Karl Hadwen")
+    expect(getByTestId("story-by").textContent).toEqual("By: Aleksandar Ristic")
   ]);
 });
